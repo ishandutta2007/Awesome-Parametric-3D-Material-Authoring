@@ -67,63 +67,63 @@ The table below catalogs prominent commercial and SaaS platforms for 3D material
 
 ## 💻 Open-Source Projects
 
-Top open-source projects for procedural material authoring, node-based shading, texture synthesis, and PBR painting, sorted by **GitHub Star Count** in descending order.
+Top open-source projects for procedural material authoring, node-based shading, texture synthesis, and PBR painting, sorted by **GitHub Stars_Count** in descending order.
 
-1. **[Blender Shader Editor](https://www.blender.org/)** [![GitHub stars](https://img.shields.io/github/stars/blender/blender?style=social&color=white)](https://github.com/blender/blender/stargazers)  
+1. **[Blender Shader Editor](https://www.blender.org/)** [![GitHub_Stars](https://img.shields.io/github/stars/blender/blender?style=social&color=white)](https://github.com/blender/blender/stargazers)  
    *The industry-leading open-source 3D production suite with integrated visual node-based shading.*  
    - **Engine:** Cycles & EEVEE Next  
    - **Highlights:** Principled BSDF surface shading, procedural noise algorithms (Voronoi, Musgrave, Wave, Gradient), Math/ColorRamp combinators, geometry nodes integration, and full Python automation via `bpy.data.materials`.  
    - **License:** GPL-3.0  
 
-2. **[Krita](https://krita.org/)** [![GitHub stars](https://img.shields.io/github/stars/KDE/krita?style=social&color=white)](https://github.com/KDE/krita/stargazers)  
+2. **[Krita](https://krita.org/)** [![GitHub_Stars](https://img.shields.io/github/stars/KDE/krita?style=social&color=white)](https://github.com/KDE/krita/stargazers)  
    *Professional free and open-source painting program tailored for concept artists and texture illustrators.*  
    - **Engine:** Qt / C++  
    - **Highlights:** Dedicated seamless tiling mode (`W` key shortcut for infinite wraparound canvas), procedural brush engines, color management (OCIO, HDR), and wrap-around pattern authoring for hand-crafted 3D textures.  
    - **License:** GPL-3.0  
 
-3. **[Material Maker](https://www.materialmaker.org/)** [![GitHub stars](https://img.shields.io/github/stars/RodZill4/material-maker?style=social&color=white)](https://github.com/RodZill4/material-maker/stargazers)  
+3. **[Material Maker](https://www.materialmaker.org/)** [![GitHub_Stars](https://img.shields.io/github/stars/RodZill4/material-maker?style=social&color=white)](https://github.com/RodZill4/material-maker/stargazers)  
    *The leading standalone open-source procedural material authoring and 3D texture painting suite.*  
    - **Engine:** Godot Engine (C++ & GLSL)  
    - **Highlights:** 200+ procedural node library, Controlled Variations system, Aperture wireless connector nodes, direct 3D mesh model painting, and one-click export templates for Unity, Unreal Engine 5, Godot, and glTF PBR.  
    - **License:** MIT  
 
-4. **[ArmorPaint](https://armorpaint.org/)** [![GitHub stars](https://img.shields.io/github/stars/armory3d/armorpaint?style=social&color=white)](https://github.com/armory3d/armorpaint/stargazers)  
+4. **[ArmorPaint](https://armorpaint.org/)** [![GitHub_Stars](https://img.shields.io/github/stars/armory3d/armorpaint?style=social&color=white)](https://github.com/armory3d/armorpaint/stargazers)  
    *Stand-alone, GPU-accelerated 3D PBR texture painting software designed from the ground up for speed.*  
    - **Engine:** Armory / Kha (Haxe & C)  
    - **Highlights:** Direct-on-mesh 4K/16K texture painting, node-based materials aligned with Cycles nodes, raytracing viewport preview (Direct3D12/Vulkan DXR), and multi-channel PBR map export.  
    - **License:** zlib / libpng  
 
-5. **[pbrt-v4](https://pbrt.org/)** [![GitHub stars](https://img.shields.io/github/stars/mmp/pbrt-v4?style=social&color=white)](https://github.com/mmp/pbrt-v4/stargazers)  
+5. **[pbrt-v4](https://pbrt.org/)** [![GitHub_Stars](https://img.shields.io/github/stars/mmp/pbrt-v4?style=social&color=white)](https://github.com/mmp/pbrt-v4/stargazers)  
    *The definitive open-source reference implementation of physically based rendering.*  
    - **Engine:** Modern C++20 / CUDA GPU & CPU  
    - **Highlights:** Accompanies the seminal Academy Award-winning textbook *Physically Based Rendering: From Theory to Implementation*, implementing state-of-the-art spectral rendering, microfacet BSDF models, hair/subsurface scattering, and Wavefront GPU ray tracing.  
    - **License:** Apache-2.0  
 
-6. **[glslEditor](https://patriciogonzalezvivo.github.io/glslEditor/)** [![GitHub stars](https://img.shields.io/github/stars/patriciogonzalezvivo/glslEditor?style=social&color=white)](https://github.com/patriciogonzalezvivo/glslEditor/stargazers)  
+6. **[glslEditor](https://patriciogonzalezvivo.github.io/glslEditor/)** [![GitHub_Stars](https://img.shields.io/github/stars/patriciogonzalezvivo/glslEditor?style=social&color=white)](https://github.com/patriciogonzalezvivo/glslEditor/stargazers)  
    *Interactive WebGL and desktop fragment shader editor for rapid procedural pattern and texture design.*  
    - **Engine:** JavaScript / WebGL / C++  
    - **Highlights:** Real-time visual feedback, embedded color pickers, interactive curve and vector widgets, and instant GLSL code generation for procedural shaders.  
    - **License:** BSD-3-Clause  
 
-7. **[MaterialX](https://materialx.org/)** [![GitHub stars](https://img.shields.io/github/stars/AcademySoftwareFoundation/MaterialX?style=social&color=white)](https://github.com/AcademySoftwareFoundation/MaterialX/stargazers)  
+7. **[MaterialX](https://materialx.org/)** [![GitHub_Stars](https://img.shields.io/github/stars/AcademySoftwareFoundation/MaterialX?style=social&color=white)](https://github.com/AcademySoftwareFoundation/MaterialX/stargazers)  
    *The industry-standard open specification and library for transferring rich material and look-development data across digital content creation applications.*  
    - **Engine:** C++ & Python  
    - **Highlights:** Initiated by Lucasfilm and Industrial Light & Magic (ILM); supported across Maya, 3ds Max, Houdini, Unreal Engine, Blender, and WebGL viewers. Provides open node graphs, code generation backends (GLSL, OSL, MSL, Vulkan), and native USD/Hydra integration.  
    - **License:** Apache-2.0  
 
-8. **[GIMP + Resynthesizer](https://github.com/bootchk/resynthesizer)** [![GitHub stars](https://img.shields.io/github/stars/bootchk/resynthesizer?style=social&color=white)](https://github.com/bootchk/resynthesizer/stargazers)  
+8. **[GIMP + Resynthesizer](https://github.com/bootchk/resynthesizer)** [![GitHub_Stars](https://img.shields.io/github/stars/bootchk/resynthesizer?style=social&color=white)](https://github.com/bootchk/resynthesizer/stargazers)  
    *Classic open-source texture synthesis and non-parametric patch generation plugin.*  
    - **Engine:** C  
    - **Highlights:** Example-based texture synthesis that generates seamless, tileable texture maps from photographic samples, removes unwanted surface artifacts, and synthesizes continuous natural materials.  
    - **License:** GPL-3.0  
 
-9. **[Texture Synthesis](https://github.com/EmbarkStudios/texture-synthesis)** [![GitHub stars](https://img.shields.io/github/stars/EmbarkStudios/texture-synthesis?style=social&color=white)](https://github.com/EmbarkStudios/texture-synthesis/stargazers)  
+9. **[Texture Synthesis](https://github.com/EmbarkStudios/texture-synthesis)** [![GitHub_Stars](https://img.shields.io/github/stars/EmbarkStudios/texture-synthesis?style=social&color=white)](https://github.com/EmbarkStudios/texture-synthesis/stargazers)  
    *High-performance, example-based procedural texture synthesis library developed in Rust.*  
    - **Engine:** Rust (CLI & Library)  
    - **Highlights:** Developed by Embark Studios; generates high-resolution non-repeating surface textures from tiny input patches, featuring tiling generation, color transfer, and multi-channel inpainting.  
    - **License:** MIT / Apache-2.0  
 
-10. **[OpenPBR](https://github.com/AcademySoftwareFoundation/OpenPBR)** [![GitHub stars](https://img.shields.io/github/stars/AcademySoftwareFoundation/OpenPBR?style=social&color=white)](https://github.com/AcademySoftwareFoundation/OpenPBR/stargazers)  
+10. **[OpenPBR](https://github.com/AcademySoftwareFoundation/OpenPBR)** [![GitHub_Stars](https://img.shields.io/github/stars/AcademySoftwareFoundation/OpenPBR?style=social&color=white)](https://github.com/AcademySoftwareFoundation/OpenPBR/stargazers)  
     *The next-generation open standard for physically based shading models, co-developed by Adobe and Lucasfilm.*  
     - **Engine:** MaterialX / Shading Specification  
     - **Highlights:** Successor to Autodesk Standard Surface and Adobe Standard Material under the Academy Software Foundation (ASWF). Unifies dielectric, metallic, transmission, retro-reflective, and thin-film wave interference models.  
@@ -167,7 +167,7 @@ Contributions from technical artists, shader developers, and 3D creators are wel
 1. **Fork the Repository:** Click the fork button at the top right of this page.
 2. **Add or Update Tools:** Follow the existing Markdown structure:
    - For **SaaS**: include company valuation/revenue, exact starting tier pricing, specific free trial/tier limits, and target workflow.
-   - For **Open-Source**: include star count badge with `style=social&color=white` linking to the stargazers page, license, engine, and core capabilities.
+   - For **Open-Source**: include Stars_Count badge with `style=social&color=white` linking to the stargazers page, license, engine, and core capabilities.
 3. **Submit a Pull Request:** Provide a clear summary of your changes.
 
 ---
@@ -193,3 +193,12 @@ If this resource saves you time, enhances your 3D workflow, or introduces you to
 
 - This is a community-maintained index for informational purposes. Product names, logos, and brands are property of their respective owners.
 - Pricing, trial periods, and feature availability are subject to change by software vendors. Always refer to official vendor portals for binding terms.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Parametric-3D-Material-Authoring&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Parametric-3D-Material-Authoring_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Parametric-3D-Material-Authoring_growth.svg">
+  </picture>
+</a>
