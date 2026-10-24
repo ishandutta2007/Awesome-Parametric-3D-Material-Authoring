@@ -1,66 +1,195 @@
-# Awesome-Parametric-3D-Material-Authoring
+<div align="center">
 
-## Top Parametric 3D Material Authoring Ecosystem
+![Awesome Parametric 3D Material Authoring Banner](assets/banner.svg)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Node-Based Procedural Generation, PBR Texture Export & Self-Hosted Texture Painting*  
-**Last updated: March 2026**
+# 🎨 Awesome Parametric 3D Material Authoring
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Parametric 3D Material Authoring**. These tools let artists and technical directors build materials procedurally — wiring nodes to generate textures, masks, and PBR maps that update parametrically — with a spectrum running from Adobe's industry-standard Substance suite to open-source alternatives that export to Unity, Unreal, and Godot without subscription fees.
+**A curated ecosystem of commercial SaaS platforms, open-source software, node-based procedural graph editors, PBR texture synthesis engines, and real-time 3D texture painting suites.**
 
-**Examples** include Material Maker, ArmorPaint, Blender Shader Editor, and GIMP (the category leaders).
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Parametric-3D-Material-Authoring/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Parametric-3D-Material-Authoring?style=flat-square&logo=github&color=gold" alt="Repo Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Parametric-3D-Material-Authoring/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Parametric-3D-Material-Authoring?style=flat-square&logo=github&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Parametric-3D-Material-Authoring/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Parametric-3D-Material-Authoring/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, node-graph procedural generation, and transparent PBR export — especially relevant as **Material Maker 1.6** ships a Controlled Variations system and Aperture nodes to rival Substance Designer's Portal Node [citation:6].
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **Adobe Substance 3D Designer** — **The industry-standard procedural material authoring tool.** Node-based graph editor for creating PBR textures, with a massive library of atomic nodes, filters, and generators. **Subscription-based** as part of Creative Cloud. **Best for professional game and VFX studios** where Substance's node library, Substance 3D Painter integration, and industry-standard `.sbs` format are non-negotiable.
-
-- **Adobe Substance 3D Painter** — **The reference 3D texture painting tool.** Paints directly onto 3D meshes with material layers, smart materials, and real-time PBR preview. **Subscription-based**. **Best for artists** needing the most polished texture painting experience with deep Substance ecosystem integration.
-
-- **Quixel Mixer** — **Epic's free material authoring tool.** Node-based material mixing with Megascans integration. **Free for Unreal Engine users**. **Best for Unreal developers** wanting free material authoring with Megascans library access, accepting Epic ecosystem dependency.
-
-## Open-Source GitHub Projects
-
-- **Material Maker** — **The leading open-source Substance Designer alternative.** MIT licensed, **1.6** released April 2026 [citation:6]. **Built on the Godot Engine**, with a **node-based graph editor** for procedural texture generation and a **3D texture painting system** added in recent versions [citation:6]. **Around 200 nodes** in the library, with **export templates for Unity, Unreal Engine, and Godot** [citation:6]. **Material Maker 1.6** adds the **Controlled Variations node** for systematically generating material variants (rather than randomizing the entire seed), **Aperture nodes** that wirelessly connect graph points to reduce visual clutter (equivalent to Substance Designer's Portal Node), and a **basic glTF exporter** for static PBR materials [citation:6]. **Material Maker 1.5** had already added **DDS image loading**, **FBX mesh loading**, a reinstated **CLI for batch export**, and 10 new nodes including seven SDF nodes [citation:12]. **Available via itch.io, Steam, Scoop, Chocolatey, and Homebrew** . **The honest caveat**: **interface and node ecosystem are less mature than Substance Designer** — it is a capable free alternative, not a drop-in replacement for studio pipelines [citation:12]. **Best for indie developers, hobbyists, and studios wanting a free Substance Designer alternative** with PBR export to major game engines and active development.
-
-- **ArmorPaint** — **The open-source 3D PBR texture painting tool.** **zlib/libpng licensed**, written in Haxe/Kha, powered by the Armory engine . **Paints directly onto 3D models** with a modern viewport providing instant visual feedback, **material nodes based on Cycles nodes**, and **export to texture formats** with configurable resolution and channels . **Runs on GPU** — Intel HD4000 works for 4K painting, GTX 1060/6GB recommended for 16K textures . **Cross-platform** on Windows, Linux, and macOS (unsigned builds) . **Distributed binaries are paid** to fund development; the source code is freely available on GitHub for developers to compile . **The honest limitations**: **only one-step undo**, **masking limited to color ID maps**, and **FBX/glTF importers are not 100% reliable** — `.obj` is the most reliable format . **Best for artists** wanting open-source PBR texture painting with a path to compiling from source, accepting that the free path requires a build toolchain.
-
-- **Blender Shader Editor** — **The fully integrated procedural material system inside Blender.** Free, open-source, with **node-based shader authoring** for Cycles and EEVEE Next. **Principled BSDF** provides a unified PBR surface with base color, metallic, roughness, IOR, and normal inputs [citation:3]. **Procedural texture nodes** (Noise, Voronoi, Wave, Gradient) wire into ColorRamp, Mix, and Math nodes for complex parametric materials [citation:15]. **Python scripting via `bpy.data.materials`** enables batch generation of parametric material variants — the same four steps (create datablock, enable nodes, add nodes, wire links) scale to thousands of materials [citation:3]. **The honest caveat**: **it is a general 3D suite, not a dedicated material authoring tool** — node graphs are embedded in `.blend` files rather than standalone `.sbs`-like assets, and exporting PBR maps requires baking. **Best for Blender users** wanting procedural materials without leaving their 3D workflow, and technical artists comfortable with Python automation.
-
-- **GIMP + Resynthesizer** — **The image-editing approach to texture generation.** GIMP is GPL-licensed, with the **Resynthesizer plugin** providing texture synthesis capabilities [citation:4]. **Generates larger versions of a texture sample**, **makes images tilable** (horizontally and/or vertically), **removes unwanted features by extending surrounding texture**, and **applies texture themes to images** [citation:4]. **Options include fit output to bordering pixels, texture transfer via input/output maps, and map importance control** [citation:4]. **The honest limitation**: **it is not a node-based parametric authoring tool** — it operates on raster images, so parametric control is limited to what you can script or repeat manually. **Best for quick texture fixes and tilable texture generation** from photographic samples, not for building reusable material graphs.
-
-### Additional Strong Open-Source Options
-
-- **GIMP Resynthesizer** — Already covered above; the plugin repository is actively maintained under `bootchk/resynthesizer` [citation:4].
-- **Krita** — Not a material authoring tool per se, but its **seamless tiling canvas mode** and brush engines are useful for hand-painted texture creation [citation:11]. Best for artists painting textures manually rather than generating them procedurally.
-
-**Frameworks for building custom systems**: Combine **Material Maker** for node-based procedural generation with PBR export to Unity/Unreal/Godot, **ArmorPaint** for 3D texture painting with Cycles-based material nodes, **Blender Shader Editor** for procedural materials integrated into a full 3D pipeline with Python automation, and **GIMP + Resynthesizer** for quick tilable texture synthesis from photographic samples — to build a material authoring stack tailored to your need for node-graph generation versus direct painting, and standalone material assets versus integrated 3D workflows.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Parametric material authoring tools differ significantly in node ecosystem depth, export fidelity, and workflow integration. **Material Maker is the closest open-source Substance Designer alternative** with a growing node library and PBR export templates, but **its interface and ecosystem are less mature than Adobe's** [citation:6][citation:12]. **ArmorPaint's distributed binaries are paid** — the open-source path requires compiling from source with a toolchain . **Blender's Shader Editor is not a dedicated material authoring tool** — node graphs are embedded in `.blend` files, and exporting PBR maps requires baking. **GIMP + Resynthesizer is image-based, not node-based** — it lacks parametric graph reusability. **Substance Designer and Painter remain the industry standard** for studio pipelines where `.sbs` assets and Substance ecosystem integration are required.
-- Self-hosted open-source solutions require proper GPU drivers for real-time 3D preview (ArmorPaint runs on the GPU, Material Maker uses Godot's renderer), and awareness that compiling ArmorPaint from source requires Visual Studio/clang/Xcode toolchains .
+</div>
 
 ---
 
-**Made for technical artists, game developers, and 3D creators choosing material authoring tools that match their pipeline and budget.**
-Let's make parametric 3D material authoring more open, node-native, and PBR-export-friendly.
+## 📑 Table of Contents
+- [📖 Overview & Key Concepts](#-overview--key-concepts)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 Commercial & SaaS Platforms](#-commercial--saas-platforms)
+- [💻 Open-Source Projects](#-open-source-projects)
+- [🔄 Parametric Workflow Stack](#-parametric-workflow-stack)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support](#-support)
+- [⚖️ Disclaimer](#-disclaimer)
+
+---
+
+## 📖 Overview & Key Concepts
+
+**Parametric 3D Material Authoring** represents modern procedural surface generation for 3D digital art, game development, and VFX pipelines. Instead of manually painting static bitmaps in 2D image editors, technical artists construct non-destructive **node-based graphs** that calculate mathematical noise functions, distance fields, and color mappings dynamically.
+
+### 🔑 Key Pillars of Parametric Shading
+- **Non-Destructive Workflows:** Alter resolution, color palettes, distress, or weathering at any phase simply by adjusting numeric parameters and seed integers without re-baking from scratch.
+- **Physically Based Rendering (PBR) Compliance:** Export consistent material maps (Albedo/Base Color, Roughness, Metallic, Normal, Ambient Occlusion, Height, and Subsurface Scattering) across modern real-time engines.
+- **Cross-Engine Portability:** Standardized material representation through open specifications such as **MaterialX** and **OpenPBR**, compatible with Unreal Engine 5, Unity, Godot Engine, and Blender.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global 3D texturing, rendering, and parametric material authoring software market is estimated at **$1.8B to $2.4B**, growing at a **~12.5% CAGR** driven by AAA gaming, virtual production (VFX), architectural visualization, and real-time XR environments.
+
+The sector demonstrates a **highly concentrated, winner-take-all structure at the top tier**, where Adobe's Substance 3D ecosystem (Designer and Painter) serves as the entrenched industry standard across studio pipelines and `.sbs` / `.sbsar` asset delivery. Concurrently, the indie, self-hosted, and game-development mid-tier exhibits **emerging fragmentation**, enabled by Epic Games (Quixel Mixer), nimble commercial challengers (InstaMat, Marmoset Toolbag), and rapidly advancing open-source solutions (Material Maker, ArmorPaint, Blender Shader Editor) offering perpetual licensing and subscription-free alternatives.
+
+---
+
+## 🏢 Commercial & SaaS Platforms
+
+The table below catalogs prominent commercial and SaaS platforms for 3D material authoring and texture painting, sorted by **Company Valuation / Revenue** in descending order.
+
+| Platform | Company & Valuation / Revenue | Pricing | Free Tier / Trial Limit | Key Capabilities & Pipeline Target |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Adobe Substance 3D Designer](https://www.adobe.com/products/substance3d-designer.html)** | Adobe Inc.<br>*(Valuation: ~$220B Market Cap / $21.4B Annual Rev)* | **$19.99/mo** ($219.88/yr) for Texturing Plan;<br>or **$199.99 one-time** perpetual on Steam | **30-day free trial** with full feature access and 30 asset downloads; **100% free educational license** for verified students & educators | Industry-standard node-graph procedural generator. Compiles `.sbsar` dynamic assets with parametric exposure for game engines and DCC tools. |
+| **[Adobe Substance 3D Painter](https://www.adobe.com/products/substance3d-painter.html)** | Adobe Inc.<br>*(Valuation: ~$220B Market Cap / $21.4B Annual Rev)* | **$19.99/mo** ($219.88/yr) for Texturing Plan;<br>or **$199.99 one-time** perpetual on Steam | **30-day free trial** with full access to smart materials, brushes, and masking; **100% free educational license** for educators and students | Industry-standard 3D mesh texture painter. Offers real-time viewport baking, physics particles, smart masks, and multi-channel PBR brush engines. |
+| **[Quixel Mixer](https://quixel.com/mixer)** | Epic Games<br>*(Valuation: ~$22.5B / ~$5.6B Annual Rev)* | **100% Free** for Unreal Engine renders;<br>historical standalone commercial non-UE at $19/mo or 5% UE royalty terms | **Free forever** with full access to Mixer toolset and unlimited Megascans library textures for any content rendered inside Unreal Engine | Layer-based texture mixer combining scan data with procedural noise, sculpt brushes, and channel packing designed for Unreal Engine 5. |
+| **[InstaMat](https://instamaterial.com/)** | Abstract Technologies<br>*(Valuation: ~$20M private)* | Paid tiers start at **€9.99/mo** (~$11/mo billed annually) or **€14.99/mo** for Freelancer;<br>**€39.99/mo** for Small Studio | **Free Pioneer License forever** for personal or commercial use by individuals and entities with under **$100,000 gross annual revenue** | Next-generation unified material authoring, mesh painting, canvas layering, and graph procedural nodes with Python and C++ SDK integration. |
+| **[Marmoset Toolbag](https://marmoset.co/toolbag/)** | Marmoset LLC<br>*(Valuation: ~$10M private / ~$4M Annual Rev)* | Starts at **$15.99/mo** (individual monthly), **$189.00/yr** (individual annual), or **$359.00 one-time** perpetual license | **30-day fully functional evaluation trial** with zero watermarks, full baker functionality, and unrestricted texture exports | Real-time GPU texture baking suite, 3D texture painter, and look-dev presentation renderer popular with real-time character and prop artists. |
+
+---
+
+## 💻 Open-Source Projects
+
+Top open-source projects for procedural material authoring, node-based shading, texture synthesis, and PBR painting, sorted by **GitHub Star Count** in descending order.
+
+1. **[Blender Shader Editor](https://www.blender.org/)** [![GitHub stars](https://img.shields.io/github/stars/blender/blender?style=social&color=white)](https://github.com/blender/blender/stargazers)  
+   *The industry-leading open-source 3D production suite with integrated visual node-based shading.*  
+   - **Engine:** Cycles & EEVEE Next  
+   - **Highlights:** Principled BSDF surface shading, procedural noise algorithms (Voronoi, Musgrave, Wave, Gradient), Math/ColorRamp combinators, geometry nodes integration, and full Python automation via `bpy.data.materials`.  
+   - **License:** GPL-3.0  
+
+2. **[Krita](https://krita.org/)** [![GitHub stars](https://img.shields.io/github/stars/KDE/krita?style=social&color=white)](https://github.com/KDE/krita/stargazers)  
+   *Professional free and open-source painting program tailored for concept artists and texture illustrators.*  
+   - **Engine:** Qt / C++  
+   - **Highlights:** Dedicated seamless tiling mode (`W` key shortcut for infinite wraparound canvas), procedural brush engines, color management (OCIO, HDR), and wrap-around pattern authoring for hand-crafted 3D textures.  
+   - **License:** GPL-3.0  
+
+3. **[Material Maker](https://www.materialmaker.org/)** [![GitHub stars](https://img.shields.io/github/stars/RodZill4/material-maker?style=social&color=white)](https://github.com/RodZill4/material-maker/stargazers)  
+   *The leading standalone open-source procedural material authoring and 3D texture painting suite.*  
+   - **Engine:** Godot Engine (C++ & GLSL)  
+   - **Highlights:** 200+ procedural node library, Controlled Variations system, Aperture wireless connector nodes, direct 3D mesh model painting, and one-click export templates for Unity, Unreal Engine 5, Godot, and glTF PBR.  
+   - **License:** MIT  
+
+4. **[ArmorPaint](https://armorpaint.org/)** [![GitHub stars](https://img.shields.io/github/stars/armory3d/armorpaint?style=social&color=white)](https://github.com/armory3d/armorpaint/stargazers)  
+   *Stand-alone, GPU-accelerated 3D PBR texture painting software designed from the ground up for speed.*  
+   - **Engine:** Armory / Kha (Haxe & C)  
+   - **Highlights:** Direct-on-mesh 4K/16K texture painting, node-based materials aligned with Cycles nodes, raytracing viewport preview (Direct3D12/Vulkan DXR), and multi-channel PBR map export.  
+   - **License:** zlib / libpng  
+
+5. **[pbrt-v4](https://pbrt.org/)** [![GitHub stars](https://img.shields.io/github/stars/mmp/pbrt-v4?style=social&color=white)](https://github.com/mmp/pbrt-v4/stargazers)  
+   *The definitive open-source reference implementation of physically based rendering.*  
+   - **Engine:** Modern C++20 / CUDA GPU & CPU  
+   - **Highlights:** Accompanies the seminal Academy Award-winning textbook *Physically Based Rendering: From Theory to Implementation*, implementing state-of-the-art spectral rendering, microfacet BSDF models, hair/subsurface scattering, and Wavefront GPU ray tracing.  
+   - **License:** Apache-2.0  
+
+6. **[glslEditor](https://patriciogonzalezvivo.github.io/glslEditor/)** [![GitHub stars](https://img.shields.io/github/stars/patriciogonzalezvivo/glslEditor?style=social&color=white)](https://github.com/patriciogonzalezvivo/glslEditor/stargazers)  
+   *Interactive WebGL and desktop fragment shader editor for rapid procedural pattern and texture design.*  
+   - **Engine:** JavaScript / WebGL / C++  
+   - **Highlights:** Real-time visual feedback, embedded color pickers, interactive curve and vector widgets, and instant GLSL code generation for procedural shaders.  
+   - **License:** BSD-3-Clause  
+
+7. **[MaterialX](https://materialx.org/)** [![GitHub stars](https://img.shields.io/github/stars/AcademySoftwareFoundation/MaterialX?style=social&color=white)](https://github.com/AcademySoftwareFoundation/MaterialX/stargazers)  
+   *The industry-standard open specification and library for transferring rich material and look-development data across digital content creation applications.*  
+   - **Engine:** C++ & Python  
+   - **Highlights:** Initiated by Lucasfilm and Industrial Light & Magic (ILM); supported across Maya, 3ds Max, Houdini, Unreal Engine, Blender, and WebGL viewers. Provides open node graphs, code generation backends (GLSL, OSL, MSL, Vulkan), and native USD/Hydra integration.  
+   - **License:** Apache-2.0  
+
+8. **[GIMP + Resynthesizer](https://github.com/bootchk/resynthesizer)** [![GitHub stars](https://img.shields.io/github/stars/bootchk/resynthesizer?style=social&color=white)](https://github.com/bootchk/resynthesizer/stargazers)  
+   *Classic open-source texture synthesis and non-parametric patch generation plugin.*  
+   - **Engine:** C  
+   - **Highlights:** Example-based texture synthesis that generates seamless, tileable texture maps from photographic samples, removes unwanted surface artifacts, and synthesizes continuous natural materials.  
+   - **License:** GPL-3.0  
+
+9. **[Texture Synthesis](https://github.com/EmbarkStudios/texture-synthesis)** [![GitHub stars](https://img.shields.io/github/stars/EmbarkStudios/texture-synthesis?style=social&color=white)](https://github.com/EmbarkStudios/texture-synthesis/stargazers)  
+   *High-performance, example-based procedural texture synthesis library developed in Rust.*  
+   - **Engine:** Rust (CLI & Library)  
+   - **Highlights:** Developed by Embark Studios; generates high-resolution non-repeating surface textures from tiny input patches, featuring tiling generation, color transfer, and multi-channel inpainting.  
+   - **License:** MIT / Apache-2.0  
+
+10. **[OpenPBR](https://github.com/AcademySoftwareFoundation/OpenPBR)** [![GitHub stars](https://img.shields.io/github/stars/AcademySoftwareFoundation/OpenPBR?style=social&color=white)](https://github.com/AcademySoftwareFoundation/OpenPBR/stargazers)  
+    *The next-generation open standard for physically based shading models, co-developed by Adobe and Lucasfilm.*  
+    - **Engine:** MaterialX / Shading Specification  
+    - **Highlights:** Successor to Autodesk Standard Surface and Adobe Standard Material under the Academy Software Foundation (ASWF). Unifies dielectric, metallic, transmission, retro-reflective, and thin-film wave interference models.  
+    - **License:** Apache-2.0  
+
+---
+
+## 🔄 Parametric Workflow Stack
+
+```
+   ┌────────────────────────────────────────────────────────┐
+   │ 1. Procedural Graph Design                             │
+   │    • Material Maker (Node graph generation)            │
+   │    • Adobe Substance 3D Designer (.sbs / .sbsar)       │
+   │    • Blender Shader Editor (Procedural Math & Noise)   │
+   └───────────────────────────┬────────────────────────────┘
+                               │
+                               ▼
+   ┌────────────────────────────────────────────────────────┐
+   │ 2. 3D Mesh Texture Painting & Baking                   │
+   │    • ArmorPaint (GPU PBR Texture Painting)             │
+   │    • Adobe Substance 3D Painter (Multi-layer smarts)   │
+   │    • Marmoset Toolbag (High-speed baking & look-dev)   │
+   └───────────────────────────┬────────────────────────────┘
+                               │
+                               ▼
+   ┌────────────────────────────────────────────────────────┐
+   │ 3. Standardization & Pipeline Export                   │
+   │    • MaterialX / OpenPBR XML Graph Definitions         │
+   │    • Packed PBR Bitmaps: Albedo, Roughness, Normal, AO │
+   │    • Real-time Engines: Unreal Engine 5, Godot, Unity  │
+   └────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from technical artists, shader developers, and 3D creators are welcome!
+
+1. **Fork the Repository:** Click the fork button at the top right of this page.
+2. **Add or Update Tools:** Follow the existing Markdown structure:
+   - For **SaaS**: include company valuation/revenue, exact starting tier pricing, specific free trial/tier limits, and target workflow.
+   - For **Open-Source**: include star count badge with `style=social&color=white` linking to the stargazers page, license, engine, and core capabilities.
+3. **Submit a Pull Request:** Provide a clear summary of your changes.
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Parametric-3D-Material-Authoring&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Parametric-3D-Material-Authoring&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you for exploring and bookmarking **Awesome-Parametric-3D-Material-Authoring**! 🌟
+
+If this resource saves you time, enhances your 3D workflow, or introduces you to new creative tools, please consider supporting the project:
+- ⭐ **Star this repository** to improve visibility across the 3D computer graphics community.
+- 🍴 **Fork and share** with fellow technical artists, shader engineers, and game devs.
+- ☕ **Sponsor or buy a coffee** to help maintain updates and new curation: [**Sponsor Dashboard**](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a community-maintained index for informational purposes. Product names, logos, and brands are property of their respective owners.
+- Pricing, trial periods, and feature availability are subject to change by software vendors. Always refer to official vendor portals for binding terms.
