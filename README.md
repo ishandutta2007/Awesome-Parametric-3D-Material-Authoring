@@ -1,6 +1,6 @@
 # Awesome-Parametric-3D-Material-Authoring
 
-# Top Parametric 3D Material Authoring Ecosystem
+## Top Parametric 3D Material Authoring Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Node-Based Procedural Generation, PBR Texture Export & Self-Hosted Texture Painting*  
